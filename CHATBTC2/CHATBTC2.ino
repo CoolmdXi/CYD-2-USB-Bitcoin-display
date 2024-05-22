@@ -1,6 +1,9 @@
 // the sketch is writtain mainly by ChatGPT for CYD 2 USB. Dont forget to set TFT_ESPI User_Setup for your Display
+
 // i have recently started tinkering with microcontroller have no programming knowledge but enjoy TINKERING
+
 // The clock has been adjusted to BST(UK) and updates every second but the Bit coin prices are updated every 5 minutes
+
 
 #include <WiFi.h>
 #include <HTTPClient.h>
@@ -9,12 +12,12 @@
 #include <NTPClient.h>
 #include <WiFiUdp.h>
 
-#define TFT_WIDTH 320
-#define TFT_HEIGHT 240
+#define TFT_WIDTH 320 // landscape mode USB to right
+#define TFT_HEIGHT 240 // " "
 
 // Replace with your network credentials
-const char* ssid = "Markshub2g";
-const char* password = "@12Marinas";
+const char* ssid = "SSID";
+const char* password = "PASSWORD";
 
 // Define NTP Client to get time
 WiFiUDP ntpUDP;
